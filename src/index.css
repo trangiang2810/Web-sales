@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+}
+.app{}
+
+.icon{
+  font-size: 2rem;
+}
+
+.mt-1\2{
+  margin-top: 25%;
+}
+
+
+
+
+.banner{
+  background-image: url(./img/banner3.jpg);
+  background-size: cover;
+}
+
+
+.textShadow{
+  text-shadow: 1px 2px 3px rgb(60, 38, 1);
+}
+
+.boxShadow{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}

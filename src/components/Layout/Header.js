@@ -1,0 +1,141 @@
+import React, { useState } from 'react'
+import {FiMail, FiMapPin, FiSearch,FiStar} from 'react-icons/fi'
+import {FaRegUser, FaBars} from 'react-icons/fa'
+import {BsCart2} from 'react-icons/bs'
+import { NavLink, Link } from 'react-router-dom'
+import { useRef } from 'react'
+import { useEffect } from 'react'
+
+
+import { useSelector } from 'react-redux'
+
+const Header = () => {
+    const nav__links = [
+        {
+          path: '/trangchu',
+          display: 'TRANG CHỦ' 
+        },
+        {
+          path: '/sanpham',
+          display: 'SẢN PHẨM'
+        },
+        // {
+        //   path: '/gioithieu',
+        //   display: 'GIỚI THIẾU'
+        // },
+        {
+            path: '/goccamhung',
+            display: 'GÓC CẢM HỨNG'
+          },
+      ]
+    const totalQuantity = useSelector(state=> state.cart.totalQuantity)
+    const menuRef = useRef(null)
+    const menuToggle = () => menuRef.current.classList.toggle('hidden')
+
+    const headerRef = useRef(null)
+
+    const fixedHeader = () => {
+        window.addEventListener('scroll', ()=>{
+            if(document.body.scrollTop > 100 || document.documentElement.scrollTop
+              >100){
+                headerRef.current.classList.add('fixed')
+              }else{
+                headerRef.current.classList.remove('fixed')
+              }
+          })
+        }
+
+    useEffect(() => {
+        fixedHeader() 
+        return ()=> window.removeEventListener('scroll', fixedHeader)
+    })
+
+  return (
+    <header className='max-h-[120px]'>
+        <div style={{background:'rgba(0, 0, 0, .5)'}} className=' hidden fixed w-full h-full z-[99999]' ref={menuRef} onClick={menuToggle}>
+            <div className='fixed bg-white h-full w-[30%]'>
+                <h1  className='bg-black text-[1.3rem] text-white w-full text-center py-4 font-extrabold'>MENU</h1>
+                <ul className='text-gray-700 uppercase p-[10%]'>
+                    {nav__links.map((item,index)=>(
+                        <NavLink key={index} to={item.path}>
+                            <li className='pt-6 pb-2 border-b border-gray-300 hover:font-extrabold'>
+                                {item.display}
+                            </li>
+                        </NavLink>
+                    ))} 
+                </ul>
+            </div>
+        </div>
+        {/* top */}
+        <div className='flex w-full md:justify-between justify-center sm:max-w-[720px] 
+        md:max-w-[960px] lg:max-w-[1170px] xl:max-w-[1200px] xxl:max-w-[1740px] 
+        items-center mx-auto  text-gray-500 border-b py-1'>
+            {/* left */}
+            <div className='flex gap-6 items-center font-medium'>
+                <div className='flex gap-2 border-r-2 cursor-pointer'>
+                    <FiMapPin />
+                    <span className='pr-4 text-xs'>Vị trí cửa hàng</span>
+                </div>
+                <div className='flex items-center gap-2 cursor-pointer'>
+                    <FiMail />
+                    <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+                </div>
+            </div>
+            {/* right */}
+            <div className='md:flex p-4 gap-10 hidden'>
+                <span className='text-xs cursor-pointer'>Thẻ quà tặng</span>
+                <span className='text-xs cursor-pointer'>Liên hệ & Hỏi đáp</span>
+            </div>
+        </div>
+        {/* bottom */}
+        <div className='z-[9999999999] bg-white shadow top-0 flex w-full justify-between py-1 px-[6%] mx-auto items-center' ref={headerRef}>
+            {/* LOGO */}
+            
+
+            <div className='max-w-[100%] px-2'>
+                <Link to = '/'>
+                        <h1 className='sm:text-[3rem] text-[2.5rem] text-yellow-700 font-bold textShadow pt-[%]'>TrG .</h1>
+                </Link>
+            </div>
+            {/* list*/}
+            <div className='mx-auto flex'>
+                <ul className='hidden md:flex gap-8 text-gray-700 font-normal  uppercase'>
+                    {nav__links.map((item, index)=>(
+                        <li key={index}>
+                            <NavLink to={item.path} className={(navClass)=> navClass.isActive ? 'font-bold text border-b border-stone-900 pb-2' : ''}>{item.display}</NavLink>
+                        </li>
+                    ))}
+                    
+                </ul>
+            </div>
+
+
+            {/* icons */}
+
+            <div className='flex gap-6 text-gray-700'>
+                <div>
+                    <FiSearch className='icon' />
+                </div>
+                <Link to='/giohang' className='relative'>
+                    <BsCart2 className='icon ' />
+                    <span className=' absolute bottom-4 left-5 bg-black text-white text-[0.9rem] w-5 h-5 text-center rounded-full'>
+                        {totalQuantity}
+                    </span>
+                </Link>
+                <div>
+                    <Link to='/dangnhap'>
+                        <FaRegUser className='icon' />
+                    </Link>
+                </div>
+                <div className='relative md:hidden'>
+                    <FaBars className='cursor-pointer icon' onClick={menuToggle} />
+                </div>
+               
+
+            </div>
+        </div>
+    </header>
+  )
+}
+
+export default Header

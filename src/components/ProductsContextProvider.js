@@ -47,7 +47,6 @@ const ProductContextProvider = ({children}) => {
 
   const handleClick = ()=>{
     // setLoading(true)
-    
     const isDefault = (str) => {
       return str.split(' ').includes('all')
     }
@@ -97,7 +96,6 @@ const ProductContextProvider = ({children}) => {
     bestsellersSofa,
     loading,
     handleClick,
-    // handleSearch,
     handleDown,
     handleUp
 

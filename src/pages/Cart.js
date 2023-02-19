@@ -17,7 +17,7 @@ const Cart = () => {
           (cartItems.length === 0) 
           ?
             <div className=' text-center'>
-              <h1 className='text-[2rem] text-gray-500 p-24'>
+              <h1 className='text-[1.8rem] text-gray-500 p-16'>
                 Giỏ hàng của bạn hiện đang trống
               </h1>
               {/* <Link to='/sanpham'>

@@ -77,9 +77,7 @@ const Login = () => {
           <Link className=' text-blue-700' to='/dangky'>Đăng Ký</Link>
         </div>
       </div>
-
-
-      
+    
     </form>
   )
 }

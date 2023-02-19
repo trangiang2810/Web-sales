@@ -22,7 +22,7 @@ const Header = () => {
         {
             path: '/goccamhung',
             display: 'GÓC CẢM HỨNG'
-          },
+        },
       ]
     const totalQuantity = useSelector(state=> state.cart.totalQuantity)
     const menuRef = useRef(null)
@@ -109,9 +109,9 @@ const Header = () => {
             {/* icons */}
 
             <div className='flex gap-6 text-gray-700'>
-                <div>
+                {/* <div>
                     <FiSearch className='icon' />
-                </div>
+                </div> */}
                 <Link to='/giohang' className='relative'>
                     <BsCart2 className='icon ' />
                     <span className=' absolute bottom-4 left-5 bg-black text-white text-[0.9rem] w-5 h-5 text-center rounded-full'>

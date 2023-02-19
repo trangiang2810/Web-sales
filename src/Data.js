@@ -12,11 +12,14 @@ import Inspiration9 from './img/inspiration/inspiration12.jpg'
 
 import Sofa1 from './img/sofa/sofa1.jpg'
 import Sofa2 from './img/sofa/sofa2.jpg'
-import Sofa3 from './img/sofa/sofa3.jpg'
+// import Sofa3 from './img/sofa/sofa3.jpg'
 import Sofa4 from './img/sofa/sofa4.jpg'
 import Sofa5 from './img/sofa/sofa5.jpg'
 
 import sf1 from './img/sofa/children/sf1.jpg'
+import sf1_1 from './img/sofa/children/sf1_1.jpg'
+import sf3_1 from './img/sofa/children/sf3_1.jpg'
+import sf4_1 from './img/sofa/children/sf4_1.jpg'
 
 
 
@@ -26,16 +29,26 @@ import Lamp3 from './img/den/den3.jpg'
 import Lamp4 from './img/den/den4.jpg'
 import Lamp5 from './img/den/den5.jpg'
 import Lamp6 from './img/den/den6.jpg'
-// import Lamp8 from './img/den/den8.jpg'
-// import Lamp9 from './img/den/den9.jpg'
+
+import L5_1 from './img/den/Children/d5_1.jpg'
+import L1_1 from './img/den/Children/d1_1.jpg'
+import L1_2 from './img/den/Children/d1_2.jpg'
+import L2_1 from './img/den/Children/d2_1.jpg'
 
 
 
-import Chair1 from './img/ghe/ghe1.jpg'
-import Chair2 from './img/ghe/ghe2.jpg'
-import Chair3 from './img/ghe/ghe3.jpg'
-import Chair4 from './img/ghe/ghe4.jpg'
-import Chair5 from './img/ghe/ghe5.jpg'
+
+
+import Ghe1 from './img/ghe/ghe1.jpg'
+import Ghe2 from './img/ghe/ghe2.jpg'
+import Ghe3 from './img/ghe/ghe3.jpg'
+import Ghe4 from './img/ghe/ghe4.jpg'
+import Ghe5 from './img/ghe/ghe5.jpg'
+import Ghe6 from './img/ghe/ghe6.png'
+
+import G2_1 from './img/ghe/Children/g2_1.jpg'
+import G6_1 from './img/ghe/Children/g6_1.jpg'
+
 
 
 
@@ -43,6 +56,11 @@ import Tu1 from './img/tu/tu1.jpg'
 import Tu2 from './img/tu/tu2.jpg'
 import Tu3 from './img/tu/tu3.jpg'
 import Tu4 from './img/tu/tu4.jpg'
+import Tu5 from './img/tu/tu5.jpg'
+
+import T3_1 from './img/tu/Children/t3_1.jpg'
+import T5_1 from './img/tu/Children/t5_1.jpg'
+
 
 
 
@@ -100,7 +118,7 @@ export const productsData = [
             },
             {
                 id:2,
-                image:Sofa2,
+                image:sf1_1,
 
             },
             {
@@ -169,7 +187,7 @@ export const productsData = [
             },
             {
                 id:2,
-                image:Sofa1,
+                image:sf3_1,
 
             },
             {
@@ -202,7 +220,8 @@ export const productsData = [
             },
             {
                 id:2,
-                image:Sofa1,
+                image:sf4_1,
+                
 
             },
             {
@@ -237,12 +256,12 @@ export const productsData = [
             },
             {
                 id:2,
-                image:Sofa1,
+                image:L1_1,
 
             },
             {
                 id:1,
-                image:sf1,
+                image:L1_2,
 
             },
         ],
@@ -269,7 +288,7 @@ export const productsData = [
             },
             {
                 id:2,
-                image:Sofa1,
+                image:L2_1,
 
             },
             {
@@ -291,7 +310,7 @@ export const productsData = [
     {
         id: 7,
         type: 'Đèn',
-        name: 'Đèn thả trần kim cương',
+        name: 'Đèn thả trần trụ',
         image: Lamp3,
         imgChildren:[
             {
@@ -365,7 +384,7 @@ export const productsData = [
             },
             {
                 id:2,
-                image:Sofa1,
+                image:L5_1,
 
             },
             {
@@ -390,12 +409,12 @@ export const productsData = [
     {
         id: 10,
         type: 'Ghế',
-        name: 'Ghế bọc vải chân gỗ',
-        image: Chair1,
+        name: 'Ghế da chân gỗ',
+        image: Ghe1,
         imgChildren:[
             {
                 id:1,
-                image: Chair1,
+                image: Ghe1,
 
             },
             {
@@ -425,16 +444,16 @@ export const productsData = [
         id: 11,
         type: 'Ghế',
         name: 'Ghế Cabin',
-        image: Chair2,
+        image: Ghe2,
         imgChildren:[
             {
                 id:1,
-                image: Chair2,
+                image: Ghe2,
 
             },
             {
                 id:2,
-                image:Sofa1,
+                image:G2_1,
 
             },
             {
@@ -449,7 +468,7 @@ export const productsData = [
         description:'- Ghế bàn ăn Jonstrup với thiết kế đệm ngồi bọc vải polyester êm ái và rất dễ vệ sinh. Chân ghế được làm từ kim loại sơn tĩnh điện chắc chắn và hạn chế rỉ sét',
         intro:'Bàn ghế ăn hiện nay đang là món đồ nội thất được ưa chuộng bởi nhiều gia đình. Vì nó đảm bảo được yếu tố thẩm mỹ lẫn thời thượng cho căn bếp và thể hiện cá tính cũng như phong cách của bạn.  Một bộ bàn ghế ăn hiện đại giúp gia đình bạn ấm cúng, gần nhau thêm. Ghế bàn ăn JONSTRUP là 1 lựa chọn lý tưởng cho việc kết hợp với đa dạng các mẫu bàn ăn khác, tạo nên điểm nhấn cho không gian bếp.',
         Details: {
-            color: 'Đen',
+            color: 'Nâu',
             material: 'Gỗ cao su/ Tần bì/ Sồi',
             size: '560x550x770mm'
         }
@@ -457,12 +476,12 @@ export const productsData = [
     {
         id: 12,
         type: 'Ghế',
-        name: 'Ghế Eames nhựa chân gỗ',
-        image: Chair4,
+        name: 'Ghế Eames',
+        image: Ghe4,
         imgChildren:[
             {
                 id:1,
-                image: Chair4,
+                image: Ghe4,
 
             },
             {
@@ -488,12 +507,12 @@ export const productsData = [
     {
         id: 13,
         type: 'Ghế',
-        name: 'Ghế thư dãn chân xoay',
-        image: Chair5,
+        name: 'Ghế bọc dù chân xoay',
+        image: Ghe5,
         imgChildren:[
             {
                 id:1,
-                image: Chair5,
+                image: Ghe5,
 
             },
             {
@@ -520,11 +539,11 @@ export const productsData = [
         id: 14,
         type: 'Ghế',
         name: 'Ghế Eames bọc da',
-        image: Chair3,
+        image: Ghe3,
         imgChildren:[
             {
                 id:1,
-                image: Chair3,
+                image: Ghe3,
 
             },
             {
@@ -622,7 +641,7 @@ export const productsData = [
             },
             {
                 id:2,
-                image:Sofa1,
+                image:T3_1,
 
             },
             {
@@ -677,6 +696,34 @@ export const productsData = [
     },
     {
         id: 19,
+        type: 'Tủ',
+        name: 'Tủ đồ kiểu Mỹ ',
+        image: Tu5,
+        imgChildren:[
+            {
+                id:1,
+                image: Tu5,
+
+            },
+            {
+                id:2,
+                image:T5_1,
+
+            },
+        ],
+        price: '8200.000',
+        reviews: '63',
+        amount:'100',
+        description:'-Mẫu tủ áo DTA03 được làm bởi gỗ công nghiệp MDF cốt xanh chống ẩm có độ bền lâu và chắc chắn theo thời gian sử dụng. Bề mặt gỗ phủ Melamine sáng bóng giúp tôn lên màu sắc của sản phẩm đồng thời hạn chế tối đa trầy xước khi va đập. ',
+        intro:'Tủ quần áo kèm kệ trang trí đang dần trở thành mẫu thiết kế nội thất được nhiều người ưa chuộng và lựa chọn sử dụng. Bởi sự đa năng hiện đại nhưng vẫn không làm giảm tính thẩm mĩ, thậm chí còn trang trí cho không gian thêm đẹp và mới mẻ hơn.',
+        Details: {
+            color: 'Đen',
+            material: 'Gỗ Công Nghiệp MDF phủ Melamine cốt xanh chống thấm',
+            size: '2000 x 2400 x 600 (mm) (Rộng x Cao x Sâu). ',
+        }
+    },
+    {
+        id: 20,
         type: 'Đèn',
         name: 'Đèn led gắn tường',
         image: Lamp6,
@@ -707,6 +754,39 @@ export const productsData = [
             material: 'Sản phẩm thiết kế với IP65 chống bụi chống nước, chuyên gắn các bức tường trang trí và chiếu sáng ngoài trời.',
             size: '10w ánh sáng vàng',
 
+        }
+    },
+    {
+        id: 21,
+        type: 'Ghế',
+        name: 'Ghế đơn nỉ',
+        image: Ghe6,
+        imgChildren:[
+            {
+                id:1,
+                image: Ghe6,
+
+            },
+            {
+                id:2,
+                image:G6_1,
+
+            },
+            {
+                id:1,
+                image:sf1,
+
+            },
+        ],
+        price: '870.000',
+        reviews: '2',
+        amount:'100',
+        description:'Bề mặt gia công tỉ mỉ, sơn PU nhẵn mịn, đẹp mắt.',
+        intro:'Bộ dụng cụ đầy đủ được cung cấp sẵn, dễ dàng lắp đặt.',
+        Details: {
+            color: 'Nâu',
+            material: 'Vải nỉ, chân gỗ thông phủ melamin chống thấm, dễ dàng vệ sinh, lau chùi Thiết kế theo phong cách hiện đại, tiện nghi, sang trọng, tiết kiệm diện tích',
+            size: '65*61*70cm.',
         }
     },
 ]

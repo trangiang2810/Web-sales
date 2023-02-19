@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/Web-sales/static/css/main.66ff7ffe.css",
-    "main.js": "/Web-sales/static/js/main.7bc4c662.js",
+    "main.css": "/Web-sales/static/css/main.cf561bff.css",
+    "main.js": "/Web-sales/static/js/main.0cfe0171.js",
     "static/media/inspiration9.jpg": "/Web-sales/static/media/inspiration9.63ac5d8d1a19c5832c96.jpg",
+    "static/media/ghe2.jpg": "/Web-sales/static/media/ghe2.6eb3b3145db65c702b70.jpg",
+    "static/media/g6_1.jpg": "/Web-sales/static/media/g6_1.f45a51374b81c214fd86.jpg",
+    "static/media/ghe6.png": "/Web-sales/static/media/ghe6.589f2c788bc83dabed42.png",
     "static/media/inspiration3.jpg": "/Web-sales/static/media/inspiration3.e15d6eda67619541b6a8.jpg",
     "static/media/ghe3.jpg": "/Web-sales/static/media/ghe3.5ab0b066791121b51032.jpg",
     "static/media/inspiration2.jpg": "/Web-sales/static/media/inspiration2.8514ecbdc8cc55968b47.jpg",
@@ -11,31 +14,39 @@
     "static/media/inspiration10.jpg": "/Web-sales/static/media/inspiration10.29ae742a566458bc16d5.jpg",
     "static/media/den3.jpg": "/Web-sales/static/media/den3.7dd5feac292732192b2a.jpg",
     "static/media/banner2.jpg": "/Web-sales/static/media/banner2.36ddeb218baefaf00c35.jpg",
+    "static/media/t5_1.jpg": "/Web-sales/static/media/t5_1.bbe5f89c17134939da87.jpg",
     "static/media/ghe4.jpg": "/Web-sales/static/media/ghe4.e957b7a9adeeaf9529b1.jpg",
+    "static/media/tu5.jpg": "/Web-sales/static/media/tu5.d0f460a9b3d0b149416c.jpg",
+    "static/media/sf1_1.jpg": "/Web-sales/static/media/sf1_1.79e64e7c26173c8467ea.jpg",
     "static/media/sofa2.jpg": "/Web-sales/static/media/sofa2.7cd8a3e3188eeec8e409.jpg",
     "static/media/banner3.jpg": "/Web-sales/static/media/banner3.506a384bbd9c13325153.jpg",
     "static/media/inspiration1.jpg": "/Web-sales/static/media/inspiration1.c6dcec3cbd6c39e0f693.jpg",
     "static/media/banner1.jpg": "/Web-sales/static/media/banner1.e8020e9f7998143d27a3.jpg",
+    "static/media/d1_2.jpg": "/Web-sales/static/media/d1_2.1102d28c5ee31549b3ff.jpg",
     "static/media/tu3.jpg": "/Web-sales/static/media/tu3.e4cfc2534625c92e1d6a.jpg",
     "static/media/inspiration5.jpg": "/Web-sales/static/media/inspiration5.6908bd1be035a236ec6c.jpg",
     "static/media/inspiration11.jpg": "/Web-sales/static/media/inspiration11.551fcd96c8b1ca7146d4.jpg",
     "static/media/den1.jpg": "/Web-sales/static/media/den1.bd8cf77e3fc2ad64761b.jpg",
+    "static/media/sf3_1.jpg": "/Web-sales/static/media/sf3_1.22d5a2f8026462efe09e.jpg",
     "static/media/den2.jpg": "/Web-sales/static/media/den2.a5df345c5bbb9399b699.jpg",
     "static/media/inspiration12.jpg": "/Web-sales/static/media/inspiration12.8e2c9c681f4e86bc0963.jpg",
+    "static/media/t3_1.jpg": "/Web-sales/static/media/t3_1.c9a9c8e1c988b64c5290.jpg",
     "static/media/collect1.jpg": "/Web-sales/static/media/collect1.d6901e89bb3a845853a0.jpg",
     "static/media/den4.jpg": "/Web-sales/static/media/den4.550ccef445c391f6b436.jpg",
     "static/media/collect2.jpg": "/Web-sales/static/media/collect2.732c21acfb8cb23fca3b.jpg",
     "static/media/tu1.jpg": "/Web-sales/static/media/tu1.fe9a0a590a29cc9b954f.jpg",
     "static/media/den5.jpg": "/Web-sales/static/media/den5.b4b25f9fc8d4ef6093bc.jpg",
-    "static/media/sofa3.jpg": "/Web-sales/static/media/sofa3.f2782dfb6c1c28226577.jpg",
+    "static/media/d2_1.jpg": "/Web-sales/static/media/d2_1.073f9cd47aada811feaa.jpg",
     "static/media/den6.jpg": "/Web-sales/static/media/den6.251855d32bfeed5ccf0c.jpg",
     "static/media/tu2.jpg": "/Web-sales/static/media/tu2.c459b099d453e3fb867f.jpg",
+    "static/media/d1_1.jpg": "/Web-sales/static/media/d1_1.605806b2ed146e96f3dc.jpg",
+    "static/media/d5_1.jpg": "/Web-sales/static/media/d5_1.cad5a321840d471ca89e.jpg",
     "index.html": "/Web-sales/index.html",
-    "main.66ff7ffe.css.map": "/Web-sales/static/css/main.66ff7ffe.css.map",
-    "main.7bc4c662.js.map": "/Web-sales/static/js/main.7bc4c662.js.map"
+    "main.cf561bff.css.map": "/Web-sales/static/css/main.cf561bff.css.map",
+    "main.0cfe0171.js.map": "/Web-sales/static/js/main.0cfe0171.js.map"
   },
   "entrypoints": [
-    "static/css/main.66ff7ffe.css",
-    "static/js/main.7bc4c662.js"
+    "static/css/main.cf561bff.css",
+    "static/js/main.0cfe0171.js"
   ]
 }

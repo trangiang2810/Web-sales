@@ -19,10 +19,6 @@ const Header = () => {
           path: '/sanpham',
           display: 'SẢN PHẨM'
         },
-        // {
-        //   path: '/gioithieu',
-        //   display: 'GIỚI THIẾU'
-        // },
         {
             path: '/goccamhung',
             display: 'GÓC CẢM HỨNG'
@@ -53,9 +49,9 @@ const Header = () => {
   return (
     <header className='max-h-[120px]'>
         <div style={{background:'rgba(0, 0, 0, .5)'}} className=' hidden fixed w-full h-full z-[99999]' ref={menuRef} onClick={menuToggle}>
-            <div className='fixed bg-white h-full w-[30%]'>
+            <div className='fixed bg-white h-full w-[40%]'>
                 <h1  className='bg-black text-[1.3rem] text-white w-full text-center py-4 font-extrabold'>MENU</h1>
-                <ul className='text-gray-700 uppercase p-[10%]'>
+                <ul className='text-gray-700 uppercase font-semibold p-[10%]'>
                     {nav__links.map((item,index)=>(
                         <NavLink key={index} to={item.path}>
                             <li className='pt-6 pb-2 border-b border-gray-300 hover:font-extrabold'>

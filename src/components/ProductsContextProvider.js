@@ -1,18 +1,19 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { productsData } from '../Data'
-import Product from './Product'
+
 export const ProductContext = createContext()
 
 const ProductContextProvider = ({children}) => {
   const [products, setProducts] = useState(productsData)
+  const [property, setProperty] = useState('all')
   const [properties,setProperties] = useState([])
-  const [property, setProperty] = useState('')
-  const [color, setColor] = useState('')
+  const [color, setColor] = useState('all')
   const [colors, setColors] = useState([])
   const [loading, setLoading] =useState(false)
 
 
   const [bestsellersSofa, setBestsellersSofa] =useState([])
+
 
   
   useEffect(()=> {
@@ -22,43 +23,35 @@ const ProductContextProvider = ({children}) => {
     const allColors = products.map((product)=> {
       return product.Details.color
     });
-
-    const allPrices = products.map((product)=> {
-      return product.price
-    });
     
-
-
-    const uniqueProperties = ['', ... new Set(allProperties)]
+    const uniqueProperties = ['all', ... new Set(allProperties)]
     setProperties(uniqueProperties)
 
-    const uniqueColors = ['', ... new Set(allColors)]
+    const uniqueColors = ['all', ... new Set(allColors)]
     setColors(uniqueColors)
   },[])
-
-
+  
+  
   useEffect(()=>{
     const filterBestsellersSofa = products.filter(
       (item) => item.type === 'Sofa'
-    );
-    setBestsellersSofa(filterBestsellersSofa)
-  },[])
-
-
-
+      );
+      setBestsellersSofa(filterBestsellersSofa)
+    },[])
+    
+  //   const handleSearch = e =>{
+  //   const searchItem = e.target.value
+  //   const searchedProducts = productsData.filter(item => item.type.toLowerCase().includes(searchItem.toLowerCase()))
+  //     setProducts(searchedProducts)
+  // }
 
   const handleClick = ()=>{
-// setLoading(true)
+    // setLoading(true)
+    
     const isDefault = (str) => {
-      return str.split(' ').includes('')
+      return str.split(' ').includes('all')
     }
-
-
-
-
     const newProducts = productsData.filter((product) => {
-
-
       if(product.type === property && product.Details.color === color){
         return product
       }
@@ -75,13 +68,23 @@ const ProductContextProvider = ({children}) => {
         return product.Details.color === color && product.type === property
       }
     })
-
+    
     setTimeout(()=>{
-      return setProducts(newProducts)
-
-      
-    },0)
+      setProducts(newProducts)
+    },[])
   }
+
+
+  // handle Increase and decrease
+  const handleDown = () =>{
+    productsData.sort((a,b)=>a.price - b.price)
+  } 
+  const handleUp = () =>{
+    productsData.sort((a,b)=>b.price - a.price)
+  }
+
+
+
   return (
    <ProductContext.Provider value={{
     products,
@@ -94,7 +97,10 @@ const ProductContextProvider = ({children}) => {
     bestsellersSofa,
     loading,
     handleClick,
-    
+    // handleSearch,
+    handleDown,
+    handleUp
+
    }}>
     {children}
    </ProductContext.Provider>

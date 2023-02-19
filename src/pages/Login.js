@@ -45,11 +45,21 @@ const Login = () => {
           <div>
             <input className='border w-full p-2' type="password" placeholder='Mật khẩu ' onChange={e=>setPass(e.target.value)} />
             {
+              (
                 error && pass.length<=0 
                 ? 
                 <span className='text-[0.7rem] text-red-500 font-medium'>Vui lòng nhập mật khẩu</span>
                 : 
-                ''  
+                '' 
+              )
+                ||
+              (
+                error2 && pass.length < 6
+                ? 
+                <span className='text-[0.7rem] text-red-500 font-medium'>Vui lòng nhập tối thiểu 6 kí tự</span>
+                : 
+                ''
+              ) 
             }
           </div>
         </div>

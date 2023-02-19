@@ -21,8 +21,8 @@ const FromCart = ({item}) => {
             </td>
             <td className='sm:px-8 px-4 max-xs:text-[1rem] text-[1.3rem] text-center border'>{item.price}</td>
             <td className='sm:px-6 px-4 max-xs:text-[1rem] text-[1.3rem] text-center border'>{item.quantity}</td>
-              <td className='sm:px-8 pl-6 border'>
-                <AiOutlineDelete className='cursor-pointe max-xs:text-[1rem] text-[1.3rem]' onClick={deleteProduct} />
+              <td className='sm:px-8 px-2 border'>
+                <AiOutlineDelete className='cursor-pointe max-xs:text-[1rem] text-[1.3rem] m-auto' onClick={deleteProduct} />
               </td>
         </tr>
     )

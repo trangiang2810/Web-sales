@@ -9,13 +9,13 @@ const PropertyFilter = () => {
   return (
     <div> 
         <div className='pb-2 pt-8 text-[1.2rem] border-b font-semibold'>
-            <h2 onClick={handleClick()}>DANH MỤC</h2>
+            <h2 >DANH MỤC</h2>
         </div>
         <div className='pt-5 pl-4'>
             {properties.map((property, index)=>{
                 return (
                     <div key={index}>
-                        <label >
+                        <label onClick={handleClick()} className=' cursor-pointer' >
                             <input 
                             className='mr-2'
                             type="radio" name='p' 

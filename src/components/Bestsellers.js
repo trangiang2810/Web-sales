@@ -23,7 +23,7 @@ const Besstellers = () => {
                 <div className='grid grid-cols-4'>
                 {
                     bestsellersSofa.map((item,index)=>(
-                            <div key={index} className='p-3 my-8 mx-4 hover:shadow-lg'>
+                            <div key={index} className='sm:p-3 my-8 mx-4 hover:shadow-lg'>
                                 <Link to={`/sanpham/${item.id}`}>
                                     <div className='relative '>
                                         <img className='w-full hover:scale-95' src={item.image} alt="" />
@@ -41,7 +41,7 @@ const Besstellers = () => {
                                             <span className='text-gray-500 sm:hidden max-sm:text-[0.6rem]'>{`(${item.reviews}rv)`}</span>
 
                                         </div>
-                                        <h2 className='text-[0.7rem] md:text-[1.3rem] text-gray-500 capitalize'>{item.name}</h2>
+                                        <h2 className='text-[0.7rem] sm:text-[1rem] md:text-[1.4rem] text-gray-500 capitalize'>{item.name}</h2>
                                         <h4 className='text-[0.7rem] md:text-[1.2rem]'>{item.price}</h4>
                                     </div>
                                 </Link>

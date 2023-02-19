@@ -8,7 +8,7 @@ import Banner3 from '../img/inspiration/inspiration3.jpg'
 const Inspiration = () => {
   return (
     <div className='max-w-[1740px] m-auto pb-24'>
-        <div className='grid grid-cols-5 grid-rows-2 items-center gap-4' >
+        <div className='grid grid-cols-5 grid-rows-2 items-center gap-1 xs:gap-2' >
           <div className='w-full col-span-4 row-span-2 relative overflow-hidden' >
             <img src={Banner1} alt="" />
             <div className='absolute top-0 text-white p-[19%]'>
@@ -22,15 +22,15 @@ const Inspiration = () => {
             <img src={Banner3} alt="" />
         </div>
 
-        <div className='mt-24 md:grid grid-cols-2 gap-y-6'>
+        <div className='mt-16 sm:grid grid-cols-2 gap-y-4'>
           {inspirationData.map((item,index)=>{
             return (
-              <div key={index} className='m-auto text-center p-5'>
+              <div key={index} className='m-auto text-center p-4'>
                 <Link to='#'>
-                <img src={item.image} alt="" />
-                  <h2 className='text-[1.6rem]'>{item.title}</h2>
+                <img className='pb-4' src={item.image} alt="" />
+                  <h2 className='text-[1.4rem]'>{item.title}</h2>
                 </Link>
-                <p className='text-[1.2rem] '>{item.content}</p>
+                <p className='text-[1rem] '>{item.content}</p>
               </div>
             )
           })}

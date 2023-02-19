@@ -8,6 +8,7 @@ import {BiChevronRight} from 'react-icons/bi'
 import {FiFilter, FiArrowLeft} from 'react-icons/fi'
 import PropertyFilter from '../components/Filter/PropertyFilter'
 import ColorFilter from '../components/Filter/ColorFilter'
+import UpDown from '../components/Filter/UpDown'
 
 
 const Shop = () => {
@@ -40,11 +41,9 @@ const Shop = () => {
       md:max-w-[960px] lg:max-w-[1200px] xl:max-w-[1400px] xxl:max-w-[1740px] mx-auto'
       >
         <div 
-        className='sm:w-[18%] max-sm:hidden h-full z-[999] bg-white max-sm:pr-[6%] max-sm:pl-[2%] max-sm:fixed top-0 left-0' 
+        className='sm:w-[18%] max-sm:hidden h-full z-[999] bg-white max-sm:pr-[10%] max-sm:pl-[2%] max-sm:fixed top-0 left-0' 
         ref={filterRef} 
-        // onClick={filterToggle}
         > 
-          {/* <ProductFilter /> */}
 
           <div className='mt-4 max-sm:pt-[20%]'>
             <FiArrowLeft className='sm:hidden ml-[80%]' onClick={filterToggle} />
@@ -53,7 +52,6 @@ const Shop = () => {
               <span className='text-[1.3rem]'>BỘ LỌC</span>
             </div>
             <div>
-                {/* <PriceFilter /> */}
                 <PropertyFilter />
                 <ColorFilter />
             </div>
@@ -61,10 +59,11 @@ const Shop = () => {
         </div> 
 
         <div className='w-full m-auto'>
+                <UpDown />
           <Products />
             <div 
             className='flex sm:hidden bg-gray-500 text-white font-semibold boxShadow 
-            rounded-md items-center gap-2 fixed bottom-[3%] right-[3%] px-5 py-2'
+            rounded-md items-center gap-2 fixed bottom-[3%] right-[3%] px-5 py-2 animate-bounce'
             >
               <FiFilter />
               <span onClick={filterToggle}>BỘ LỌC</span>

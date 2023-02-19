@@ -184,7 +184,7 @@ export const productsData = [
         description:'Chuyển đổi linh hoạt với hai chế độ nằm và ngồi, cho phép bạn thoải mái thư giãn sau một ngày làm việc.',
         intro:'Bàn ghế ăn hiện nay đang là món đồ nội thất được ưa chuộng bởi nhiều gia đình. Vì nó đảm bảo được yếu tố thẩm mỹ lẫn thời thượng cho căn bếp và thể hiện cá tính cũng như phong cách của bạn.  Một bộ bàn ghế ăn hiện đại giúp gia đình bạn ấm cúng, gần nhau thêm. Ghế bàn ăn JONSTRUP là 1 lựa chọn lý tưởng cho việc kết hợp với đa dạng các mẫu bàn ăn khác, tạo nên điểm nhấn cho không gian bếp.',
         Details: {
-            color: 'Đen',
+            color: 'Trắng',
             material: 'Tựa lưng và đệm ngồi mút bọc vải Polyester, chân kim loại',
             size: '220 x 100 x 80 cm'
         }
@@ -218,7 +218,7 @@ export const productsData = [
         description:'- Được lấy cảm hứng từ phong cách Scandinavia hiện đại, tạo nên sự cân bằng trang nhã giữa kiểu dáng tối giản và cảm giác bình dị, lôi cuốn.',
         intro:'Từng đường nét của Silverlake được tính toán kỹ lưỡng đến từng chi tiết, tựa như công trình kiến trúc trường tồn vững chãi nhưng đầy tính nghệ thuật. Đệm lưng và nệm ngồi có thể tháo rời và điều chỉnh theo nhu cầu của bạn. Chi tiết xếp li trên từng cạnh nệm được chăm chút một cách tỉ mỉ, đơn giản nhưng cầu kỳ.',
         Details: {
-            color: 'Xám',
+            color: 'Đen',
             material: 'Gỗ thông nhập khẩu, Sắt sơn tĩnh điện, Sắt sơn tĩnh điện',
             size: '220 x 95 x 75 cm (Dài x Rộng x Cao)'
         }

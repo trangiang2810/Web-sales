@@ -9,13 +9,13 @@ const ColorFilter = () => {
   return (
     <div> 
         <div className='pb-2 pt-8 text-[1.2rem] border-b font-semibold'>
-            <h2 onClick={handleClick()}>MÀU SĂC</h2>
+            <h2>MÀU SĂC</h2>
         </div>
         <div className='pt-5 pl-4'>
             {colors.map((color, index)=>{
                 return (
-                    <div key={index}>
-                        <label >
+                    <div  key={index}>
+                        <label onClick={handleClick()} className=' cursor-pointer' >
                             <input 
                             className='mr-2'
                             type="radio" name='c' 

@@ -15,7 +15,7 @@ const Search = ({searchToggle}) => {
             
             <div className='w-full px-8 sm:w-[70%] m-auto'>
                 <div className='flex gap-2 items-center p-[1%] bg-[#767676] rounded-md'>
-                    <input onChange={handleSearch} type="text" placeholder='Search' className='w-full h-14 text-[2rem] outline-none px-3' />
+                    <input onChange={handleSearch} type="text" placeholder='Search' className='w-full h-14 text-[1.2rem] xs:text-[1.5rem] outline-none px-3' />
                     <BsSearch className='text-white text-[2rem] bg-zinc-900 h-12 w-16 p-3' />
                 </div>
                 {
@@ -24,7 +24,7 @@ const Search = ({searchToggle}) => {
                           <div className='m-auto w-[50%]'>
                             <img className='m-auto' src={Icon} />
                           </div>
-                          <h1 className='text-[1.3rem] sm:text-[1.8rem] text-gray-500'> Rất tiếc, Không có sản phẩm bạn đang tìm kiếm</h1> 
+                          <h1 className='text-[1.3rem] sm:text-[1.8rem] text-gray-700'> Rất tiếc, Không có sản phẩm bạn đang tìm kiếm</h1> 
                         </div>
                       :
                       

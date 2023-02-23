@@ -39,22 +39,17 @@ const ProductContextProvider = ({children}) => {
       setBestsellersSofa(filterBestsellersSofa)
     },[])
     
-  //   const handleSearch = e =>{
-  //   const searchItem = e.target.value
-  //   const searchedProducts = productsData.filter(item => item.type.toLowerCase().includes(searchItem.toLowerCase()))
-  //     setProducts(searchedProducts)
-  // }
-
-  const handleClick = ()=>{
-    // setLoading(true)
-    const isDefault = (str) => {
-      return str.split(' ').includes('all')
-    }
-    const newProducts = productsData.filter((product) => {
-      if(product.type === property && product.Details.color === color){
-        return product
+    
+    const handleClick = ()=>{
+      // setLoading(true)
+      const isDefault = (str) => {
+        return str.split(' ').includes('all')
       }
-      if(isDefault(property) && isDefault(color)){
+      const newProducts = productsData.filter((product) => {
+        if(product.type === property && product.Details.color === color){
+          return product
+        }
+        if(isDefault(property) && isDefault(color)){
         return product
       }
       if(!isDefault(property) && isDefault(color)){
@@ -72,8 +67,8 @@ const ProductContextProvider = ({children}) => {
       setProducts(newProducts)
     },[])
   }
-
-
+  
+  
   // handle Increase and decrease
   const handleDown = () =>{
     productsData.sort((a,b)=>a.price - b.price)
@@ -82,6 +77,13 @@ const ProductContextProvider = ({children}) => {
     productsData.sort((a,b)=>b.price - a.price)
   }
 
+  
+  //handle Search
+  const handleSearch = e =>{
+    const searchItem = e.target.value
+    const searchedProducts = productsData.filter(item => item.name.toLowerCase().includes(searchItem.toLowerCase()))
+    setProducts(searchedProducts)
+  }
 
 
   return (
@@ -97,7 +99,8 @@ const ProductContextProvider = ({children}) => {
     loading,
     handleClick,
     handleDown,
-    handleUp
+    handleUp,
+    handleSearch
 
    }}>
     {children}

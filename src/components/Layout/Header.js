@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {FiMail, FiMapPin, FiSearch,FiStar} from 'react-icons/fi'
-import {FaRegUser, FaBars} from 'react-icons/fa'
+import {FaRegUser, FaBars, FaHome} from 'react-icons/fa'
 import {BsCart2} from 'react-icons/bs'
 import { NavLink, Link } from 'react-router-dom'
 import { useRef } from 'react'
@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 
 
 import { useSelector } from 'react-redux'
+import Search from '../Search'
 
 const Header = () => {
     const nav__links = [
@@ -25,11 +26,18 @@ const Header = () => {
         },
       ]
     const totalQuantity = useSelector(state=> state.cart.totalQuantity)
+    // menu
     const menuRef = useRef(null)
     const menuToggle = () => menuRef.current.classList.toggle('hidden')
 
-    const headerRef = useRef(null)
 
+    // Search 
+    const searchRef = useRef(null)
+    const searchToggle = () => searchRef.current.classList.toggle('hidden')
+
+
+    // navbar
+    const headerRef = useRef(null)
     const fixedHeader = () => {
         window.addEventListener('scroll', ()=>{
             if(document.body.scrollTop > 100 || document.documentElement.scrollTop
@@ -109,26 +117,56 @@ const Header = () => {
             {/* icons */}
 
             <div className='flex gap-6 text-gray-700'>
-                {/* <div>
-                    <FiSearch className='icon' />
-                </div> */}
+                <div>
+                    <FiSearch onClick={searchToggle} className='text-[2rem] cursor-pointer' />
+                </div>
+
                 <Link to='/giohang' className='relative'>
-                    <BsCart2 className='icon ' />
+                    <BsCart2 className='text-[2rem] ' />
                     <span className=' absolute bottom-4 left-5 bg-black text-white text-[0.9rem] w-5 h-5 text-center rounded-full'>
                         {totalQuantity}
                     </span>
                 </Link>
                 <div>
                     <Link to='/dangnhap'>
-                        <FaRegUser className='icon' />
+                        <FaRegUser className='text-[2rem]' />
                     </Link>
                 </div>
                 <div className='relative md:hidden'>
-                    <FaBars className='cursor-pointer icon' onClick={menuToggle} />
+                    <FaBars className='cursor-pointer text-[2rem]' onClick={menuToggle} />
                 </div>
                
 
+
+
             </div>
+        </div>
+
+
+
+            {/*reposive mobile */}
+        <div className=' z-[999999999999] p-4 md:hidden fixed bottom-0 bg-white w-full flex justify-between'>
+            <Link to='/' >
+                <FaHome className='text-[2rem]' />
+            </Link>
+
+            <FaBars onClick={menuToggle} className='text-[2rem]' />
+
+            <FiSearch onClick={searchToggle} className='text-[2rem] cursor-pointer' />
+
+            <Link to='/giohang' >
+                <BsCart2 className='text-[2rem]' />
+            </Link>
+
+            <Link to='/dangnhap' >
+                <FaRegUser className='text-[2rem]' />
+            </Link>
+        </div>
+
+
+
+        <div className='hidden' ref={searchRef}  >
+            <Search searchToggle={searchToggle}/>
         </div>
     </header>
   )

@@ -13,8 +13,7 @@ body{
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.5;
 }
-.app{}
-
+as
 .icon{
   font-size: 2rem;
 }
@@ -24,13 +23,17 @@ body{
 }
 
 
-
-
 .banner{
   background-image: url(./img/banner3.jpg);
   background-size: cover;
 }
 
+.bgSearch{
+  background-image: url(./img/bgSearch.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
 
 .textShadow{
   text-shadow: 1px 2px 3px rgb(60, 38, 1);
@@ -39,3 +42,4 @@ body{
 .boxShadow{
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+

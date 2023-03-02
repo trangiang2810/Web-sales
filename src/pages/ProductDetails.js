@@ -49,14 +49,14 @@ const ProductDetails = () => {
             xs:max-w-[540px] sm:max-w-[720px] md:max-w-[960px] lg:max-w-[1200px] 
             xl:max-w-[1400px] xxl:max-w-[1740px]'>
                 <div className='w-1/2 max-md:w-full px-4 relative'>
-                    <FaArrowLeft onClick={()=>handleSlide('l')} className=' cursor-pointer absolute left-0 top-[40%] text-[1.8rem] text-gray-400 bg-gray-100' />
+                    <FaArrowLeft onClick={()=>handleSlide('l')} className=' cursor-pointer absolute left-0 top-[40%] text-[2rem] text-gray-400' />
                     <img className='w-full' src={product.imgChildren[slideNumber].image} alt="" />
-                    <FaArrowRight onClick={()=>handleSlide('r')} className=' cursor-pointer absolute right-0 top-[40%] text-[1.8rem] text-gray-400 bg-gray-100' />
+                    <FaArrowRight onClick={()=>handleSlide('r')} className=' cursor-pointer absolute right-0 top-[40%] text-[2rem] text-gray-400' />
                 <div className='flex pt-2 gap-2'>
 
                             {
                             product.imgChildren.map((item, index)=>(
-                                <div className='w-[20%] border' key={index}>
+                                <div className='w-[20%] border cursor-pointer hover:opacity-80' key={index}>
                                     <img onClick={()=>handleOpen(index)} src={item.image} alt="" />
                                 </div> 
                             ))

@@ -145,7 +145,7 @@ const Header = () => {
 
 
             {/*reposive mobile */}
-        <div className=' z-[999999999999] p-4 md:hidden fixed bottom-0 boxShadow bg-white w-full flex justify-between'>
+        <div className=' z-[999999999999] p-3 md:hidden fixed bottom-0 boxShadow bg-white w-full flex justify-between'>
             <Link to='/' >
                 <FaHome className='text-[2rem]' />
             </Link>

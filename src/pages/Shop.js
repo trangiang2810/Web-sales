@@ -63,7 +63,7 @@ const Shop = () => {
           <Products />
             <div 
             className='flex sm:hidden bg-gray-500 text-white font-semibold boxShadow 
-            rounded-md items-center gap-2 fixed bottom-[3%] right-[3%] px-5 py-2 animate-bounce'
+            rounded-md items-center gap-2 fixed z-[9999999999] bottom-[8%] right-[3%] px-5 py-2 animate-bounce'
             >
               <FiFilter />
               <span onClick={filterToggle}>BỘ LỌC</span>

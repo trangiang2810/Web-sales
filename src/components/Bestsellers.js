@@ -11,19 +11,19 @@ const Besstellers = () => {
     const {bestsellersSofa} = useContext(ProductContext)
 
         return (
-            <div className='w-full px-6 py-12'>
-                <h1 className='text-[2rem] md:text-[2.5rem] xl:text-[3rem] block text-center mt-8'>
+            <div className='w-full px-3 xs:px-6 py-6 xs:py-12 '>
+                <h1 className='text-[1.9rem] sm:text-[2.2rem] md:text-[2.6rem] xl:text-[3rem] block text-center mt-8'>
                     Bán chạy nhất
                 </h1>
                 <Link to='/sanpham'>
-                    <h1 className='md:text-[1.5rem] absolute right-[2%] animate-bounce '>
+                    <h1 className='text-[0.9rem] md:text-[1.5rem] absolute right-[2%] animate-bounce '>
                         Xem thêm...
                     </h1>
                 </Link>
                 <div className='grid grid-cols-4'>
                 {
                     bestsellersSofa.map((item,index)=>(
-                            <div key={index} className='sm:p-3 my-8 mx-4 hover:shadow-lg'>
+                            <div key={index} className='sm:p-3 my-8 mx-2 xs:mx-4 hover:shadow-lg'>
                                 <Link to={`/sanpham/${item.id}`}>
                                     <div className='relative '>
                                         <img className='w-full hover:scale-95' src={item.image} alt="" />

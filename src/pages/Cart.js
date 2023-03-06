@@ -10,14 +10,14 @@ const Cart = () => {
 
   return (
 
-      <div className='w-full max-w-[1740px] mx-auto mt-8 '>
+      <div className='w-full max-w-[1740px] mx-auto mt-6 '>
         <h1 className=' py-8 text-[2rem] flex justify-center font-semibold'>Sản phẩm đã thêm</h1>
 
         {
           (cartItems.length === 0) 
           ?
             <div className=' text-center'>
-              <h1 className='text-[1.8rem] text-gray-500 p-16'>
+              <h1 className='text-[1.7rem] text-gray-500 p-16'>
                 Giỏ hàng của bạn hiện đang trống
               </h1>
               {/* <Link to='/sanpham'>
@@ -52,13 +52,13 @@ const Cart = () => {
 
             </div>
             {/* <p>(totalQuantity) </p> */}
-            <div className='flex justify-between border-y-2 items-center py-6 px-[2%] my-16 bottom-0'>
+            <div className='flex justify-between border-y-2 items-center py-4 px-[2%] my-16 bottom-0'>
               <div className='flex sm:gap-4 gap-2 items-center'>
                 <h1 className='text-[1.4rem] sm:text-[1.8rem] flex items-center'>Thành tiền: </h1>
-                <p className='text-[1.4rem] sm:text-[1.8rem]'>{totalAmount}.000đ</p>
+                <p className='text-[1.2rem] sm:text-[1.8rem]'>{totalAmount}.000đ</p>
               </div>
               <Link to='/thanhtoan'>
-                  <button className='sm:text-[1.7rem] text-[1.2rem] hover:bg-black h-full bg-gray-900 font-bold border border-gray-600 rounded-md boxShadow text-white p-4 active:scale-75 '>
+                  <button className='sm:text-[1.7rem] text-[1.1rem] hover:bg-black h-full bg-gray-900 font-bold border border-gray-600 rounded-md boxShadow text-white p-3 active:scale-75 '>
                     THANH TOÁN
                   </button>
               </Link>

@@ -6,8 +6,8 @@ import Service3 from '../img/icon/service3.png'
 const Service = () => {
   return (
     <from className='w-full'>
-      <div style={{background:'#f6ebdf'}} className=' px-10 py-12 block'>
-        <div className='flex max-sm:flex-col max-w-[1740px] px-6 m-auto'>
+      <div style={{background:'#f6ebdf'}} className=' px-4 xs:px-10 py-8 xs:py-12 block'>
+        <div className='flex max-sm:flex-col max-w-[1740px] sm:px-6 m-auto'>
           <div className=' w-1/3 py-14 px-5 max-sm:w-full max-sm:border-x-2 max-sm:border-y-2 max-sm:border-gray-400'>
               <img className='block m-auto pb-5' src={Service1} alt="" />
               <h2 className='text-[1.1rem] text-center py-4 font-medium'>GIAO HÀNG TRÊN TOÀN QUỐC </h2>

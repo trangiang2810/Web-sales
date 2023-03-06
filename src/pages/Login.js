@@ -18,7 +18,7 @@ const Login = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className='py-24 px-8 leading-8'>
+    <form onSubmit={handleSubmit} className='py-20 px-8 leading-8'>
       <div className='w-full xs:w-96 boxShadow m-auto px-10 py-14 rounded-lg'>
         <h1 className='text-[1.5rem] text-center font-semibold py-3'>Đăng Nhập</h1>
         <div className='my-4'>
@@ -65,7 +65,8 @@ const Login = () => {
         </div>
         <div className=' justify-between flex py-2'>
           <div>
-            <input type="checkbox" />Nhớ tài khoản
+            <input type="checkbox" />
+            <span className='text-gray-500 text-[0.9rem] ml-1'>Nhớ tài khoản</span>
           </div>
           <a className='text-blue-700 text-[0.8rem]' href="#">Quên mật khẩu</a>
         </div>
@@ -73,8 +74,8 @@ const Login = () => {
           <button className='bg-black text-white font-semibold w-full my-5 mx-8 py-1 rounded-lg boxShadow active:scale-95'>ĐĂNG NHẬP</button>
         </div>
         <div className='flex justify-center'>
-          <span>Bạn chưa có tài khoản? </span>
-          <Link className=' text-blue-700' to='/dangky'>Đăng Ký</Link>
+          <span className='text-[0.85rem]'>Bạn chưa có tài khoản? </span>
+          <Link className=' text-blue-700 text-[0.85rem]' to='/dangky'>Đăng Ký</Link>
         </div>
       </div>
     

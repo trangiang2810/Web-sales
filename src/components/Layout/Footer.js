@@ -11,8 +11,7 @@ const Footer = () => {
         <div className='px-4 leading-7'>
           <div className='pb-4'>
                 <Link to = '/'>
-                    {/* <img className='max-sm:w-40' src={Logo} alt="" /> */}
-                        <h1 className='sm:text-[3rem] text-[2.5rem] text-yellow-700 font-bold textShadow pt-[%]'>TrG .</h1>
+                  <h1 className='text-[2rem] sm:text-[3rem] xs:text-[2.5rem] text-yellow-700 font-bold textShadow pt-[%]'>TrG .</h1>
                 </Link>
           </div>
           <div>
@@ -24,7 +23,7 @@ const Footer = () => {
               <a className='text-[0.8rem]' href="tel:0987654321">0987654321</a>
             </p>
           </div>
-          <div className='flex gap-4 text-black'>
+          <div className='flex gap-2 text-black'>
             <div className=' border rounded-full p-2'>
               <a href="https://www.facebook.com/profile.php?id=100021358124881">
                 <FaFacebookF />
@@ -47,10 +46,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='px-4 leading-7'>
-          <div className='text-black pb-3 font-medium flex items-center'>
-            <h5>THÔNG TIN</h5>
-          
+        <div className='px-2 xs:px-4 leading-6 xs:leading-7'>
+          <div className='text-black pb-1 font-medium flex items-center'>
+            <h5 className='text-[0.9rem] xs:text-[1rem]'>THÔNG TIN</h5>
           </div>
           <div>
             <ul>
@@ -67,9 +65,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='px-4 leading-7'>
-          <div className='text-black pb-3 font-medium'>
-            <h5>TRỢ GIÚP</h5>
+        <div className='px-2 xs:px-4 leading-6 xs:leading-7'>
+          <div className='text-black pb-1 font-medium'>
+            <h5 className='text-[0.9rem] xs:text-[1rem]'>TRỢ GIÚP</h5>
           </div>
           <div>
             <ul>
@@ -86,9 +84,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='px-4 leading-7'>
-          <div className='text-black pb-3 font-medium'>
-            <h5>DỊCH VỤ</h5>
+        <div className='px-2 xs:px-4 leading-6 xs:leading-7'>
+          <div className='text-black pb-1 font-medium'>
+            <h5 className='text-[0.9rem] xs:text-[1rem]'>DỊCH VỤ</h5>
           </div>
           <div>
             <ul>
@@ -115,10 +113,10 @@ const Footer = () => {
       <div className=' md:flex justify-between max-w-[1740px] mx-auto px-7 py-3 border-y text-center'>
         <div className='lg:flex gap-32'>
           <h4 className='text-[0.7rem]'>© 2023 TrG .  xyz Store</h4>
-          <ul className='flex text-black gap-8 font-semibold justify-center'>
-            <li className='text-[0.8rem]'>PRIVACY</li>
-            <li className='text-[0.8rem]'>TERMS</li>
-            <li className='text-[0.8rem]'>*PROMO T&CS APPLY</li>
+          <ul className='flex justify-center text-black gap-4 sm:gap-8 font-semibold'>
+            <li className='text-[0.7rem]'>PRIVACY</li>
+            <li className='text-[0.7rem]'>TERMS</li>
+            <li className='text-[0.7rem]'>*PROMO T&CS APPLY</li>
           </ul>
         </div>
           <img className='h-6 max-md:mx-auto' src={payImg} alt="" />

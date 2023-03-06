@@ -73,16 +73,16 @@ const Header = () => {
         {/* top */}
         <div className='flex w-full md:justify-between justify-center sm:max-w-[720px] 
         md:max-w-[960px] lg:max-w-[1170px] xl:max-w-[1200px] xxl:max-w-[1740px] 
-        items-center mx-auto  text-gray-500 border-b py-1'>
+        items-center mx-auto  text-gray-400 border-b py-1'>
             {/* left */}
-            <div className='flex gap-6 items-center font-medium'>
-                <div className='flex gap-2 border-r-2 cursor-pointer'>
-                    <FiMapPin />
-                    <span className='pr-4 text-xs'>Vị trí cửa hàng</span>
+            <div className='flex gap-2 items-center font-medium'>
+                <div className='flex items-center gap-1 border-r-2 cursor-pointer'>
+                    <FiMapPin className='text-[0.7rem] xs:text-[0.8rem]' />
+                    <span className='pr-2 text-[0.7rem] xs:text-[0.8rem]'>Vị trí cửa hàng</span>
                 </div>
-                <div className='flex items-center gap-2 cursor-pointer'>
-                    <FiMail />
-                    <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+                <div className='flex items-center gap-1 cursor-pointer'>
+                    <FiMail className='text-[0.7rem] xs:text-[0.8rem]' />
+                    <a className='text-[0.7rem] xs:text-[0.8rem]' href="mailto:xyz@gmail.com">xyz@gmail.com</a>
                 </div>
             </div>
             {/* right */}
@@ -92,13 +92,12 @@ const Header = () => {
             </div>
         </div>
         {/* bottom */}
-        <div className='z-[9999999999] bg-white shadow top-0 flex w-full justify-between py-1 px-[6%] mx-auto items-center' ref={headerRef}>
+        <div className='z-[9999999999] bg-white shadow top-0 flex w-full justify-between py-1 px-[2%] xs:px-[5%] mx-auto items-center' ref={headerRef}>
             {/* LOGO */}
-            
-
+        
             <div className='max-w-[100%] px-2'>
                 <Link to = '/'>
-                        <h1 className='sm:text-[3rem] text-[2.5rem] text-yellow-700 font-bold textShadow pt-[%]'>TrG .</h1>
+                        <h1 className='text-[2rem] sm:text-[3rem] xs:text-[2.5rem] text-yellow-700 font-bold textShadow pt-[%]'>TrG .</h1>
                 </Link>
             </div>
             {/* list*/}
@@ -116,24 +115,24 @@ const Header = () => {
 
             {/* icons */}
 
-            <div className='flex gap-6 text-gray-700'>
+            <div className='flex gap-4 xs:gap-6 text-gray-700'>
                 <div>
-                    <FiSearch onClick={searchToggle} className='text-[2rem] cursor-pointer' />
+                    <FiSearch onClick={searchToggle} className='text-[1.7rem] xs:text-[2rem] cursor-pointer' />
                 </div>
 
                 <Link to='/giohang' className='relative'>
-                    <BsCart2 className='text-[2rem] ' />
+                    <BsCart2 className='text-[1.7rem] xs:text-[2rem] ' />
                     <span className=' absolute bottom-4 left-5 bg-black text-white text-[0.9rem] w-5 h-5 text-center rounded-full'>
                         {totalQuantity}
                     </span>
                 </Link>
                 <div>
                     <Link to='/dangnhap'>
-                        <FaRegUser className='text-[2rem]' />
+                        <FaRegUser className='text-[1.7rem] xs:text-[2rem]' />
                     </Link>
                 </div>
                 <div className='relative md:hidden'>
-                    <FaBars className='cursor-pointer text-[2rem]' onClick={menuToggle} />
+                    <FaBars className='cursor-pointer text-[1.7rem] xs:text-[2rem]' onClick={menuToggle} />
                 </div>
                
 
@@ -154,8 +153,11 @@ const Header = () => {
 
             <FiSearch onClick={searchToggle} className='text-[2rem] cursor-pointer' />
 
-            <Link to='/giohang' >
-                <BsCart2 className='text-[2rem]' />
+            <Link to='/giohang' className='relative'>
+                <BsCart2 className='text-[2rem] ' />
+                <span className=' absolute bottom-4 left-5 bg-black text-white text-[0.9rem] w-5 h-5 text-center rounded-full'>
+                    {totalQuantity}
+                </span>
             </Link>
 
             <Link to='/dangnhap' >

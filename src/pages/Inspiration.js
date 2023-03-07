@@ -11,7 +11,7 @@ const Inspiration = () => {
         <div className='grid grid-cols-5 grid-rows-2 items-center gap-1 xs:gap-2' >
           <div className='w-full col-span-4 row-span-2 relative overflow-hidden' >
             <img src={Banner1} alt="" />
-            <div className='absolute top-0 text-white p-[19%]'>
+            <div className='absolute top-0 text-white py-[15%] px-[10%] xs:p-[19%]'>
               <h1 style={{fontFamily: 'Great Vibes, cursive'}} className='pb-2 text-[0.8rem] sm:text-[1.1rem] md:text-[1.4rem] lg:text-[1.8rem] xl:text-[2.2rem] font-extralight'>
                 Góc cảm hứng
               </h1>
@@ -22,15 +22,15 @@ const Inspiration = () => {
             <img src={Banner3} alt="" />
         </div>
 
-        <div className='mt-16 sm:grid grid-cols-2 gap-y-4'>
+        <div className='sm:mt-10 mt-4 sm:grid grid-cols-2 gap-y-4'>
           {inspirationData.map((item,index)=>{
             return (
               <div key={index} className='m-auto text-center p-4'>
                 <Link to='#'>
                 <img className='pb-4' src={item.image} alt="" />
-                  <h2 className='text-[1.4rem]'>{item.title}</h2>
+                  <h2 className='text-[1.2rem] xs:text-[1.4rem]'>{item.title}</h2>
                 </Link>
-                <p className='text-[1rem] '>{item.content}</p>
+                <p className='text-[0.9rem] xs:text-[1rem] '>{item.content}</p>
               </div>
             )
           })}
